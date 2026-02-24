@@ -35,3 +35,25 @@ jobs:
         with:
           name: health-app-jar
           path: target/*.jar
+      # ---------------------------------------------
+      # Future Enhancements (Not Implemented Yet)
+      # ---------------------------------------------
+
+      # Security Scanning:
+      # After packaging the JAR, we could integrate a security scanning tool
+      # such as Veracode, SonarQube, or Snyk.
+      # This would upload the built artifact and fail the build if
+      # critical vulnerabilities are detected.
+      # Credentials would be stored securely using GitHub Secrets.
+
+      # Deployment to AWS:
+      # After successful build and scan, a separate deploy job could:
+      # 1. Build a Docker image
+      # 2. Push it to AWS ECR
+      # 3. Deploy to ECS or EKS cluster
+      # AWS credentials would be managed via GitHub Secrets.
+
+      # On-Prem Deployment:
+      # Alternatively, the JAR or Docker image could be deployed
+      # to an on-prem server using SSH, rsync, or an orchestration tool
+      # like Ansible or Jenkins.
