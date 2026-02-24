@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: health-service
+
+custom:
+  config-value: DevOps-Screening
