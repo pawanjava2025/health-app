@@ -44,9 +44,10 @@ Returns application health information.
 
 ``` json
 {
-  "status": "UP",
-  "application": "health-app",
-  "timestamp": "2026-02-24T18:30:00"
+    "buildVersion": "NOT_SET",
+    "configValue": "DevOps-Screening",
+    "applicationName": "health-service",
+    "timestamp": "2026-02-25T14:09:55.4945323"
 }
 ```
 
